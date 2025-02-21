@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Celebrate! 🎉</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Sacramento', sans-serif;
+            background: linear-gradient(135deg, #0D1B2A, #1B263B);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            flex-direction: column;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0px 0px 10px rgba(0, 174, 239, 0.5);
+            }
+            to {
+                text-shadow: 0px 0px 20px rgba(0, 174, 239, 0.8);
+            }
+        }
+
+        p {
+            font-size: 1.5em;
+            max-width: 600px;
+            margin: 20px auto;
+            color: #B0C4DE;
+        }
+
+        .back-btn {
+            display: inline-block;
+            background: #4682B4;
+            color: #ffffff;
+            font-size: 1.2em;
+            font-weight: 600;
+            padding: 14px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            margin-top: 30px;
+            transition:  0.3s ease, transform 0.2s ease-in-out;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .back-btn:hover {
+            background: #5A9FCF;
+            transform: scale(1.05);
+        }
+
+        /* Image Section */
+        .birthday-image {
+            margin: 30px 0;
+        }
+
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 15px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, filter 0.4s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎉 Let's Celebrate! 🎉</h1>
+    <p>Thank you for being part of this special day! Here's to a future filled with happiness and success! 💙</p>
+    <img src="chibugan.jpg" alt="chibugan.jpg">
+
+    <p>Chibugan naaa!</p>
+
+    <a  class="back-btn" onclick="window.history.back()">Return</a>
+        
+    <div class="birthday-image">
+       
+    </div>
+
+    <script>
+        // Confetti effect
+        function launchConfetti() {
+            confetti({
+                particleCount: 150,
+                spread: 100,
+                origin: { y: 0.6 }
+            });
+        }
+
+        // Launch confetti every 1 seconds
+        setInterval(launchConfetti, 1000);
+    </script>
+
+</body>
+</html>

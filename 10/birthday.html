@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Danilyn!</title>
+    
+    <style>
+        /* General Styles */
+        body {
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background:linear-gradient(135deg, #b4bec2, #2f6794); /* Soft blue gradient */
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150vh;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Content Container */
+        .content-container {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 700px;
+            margin-bottom: 20%;
+            text-align: center;
+            color: #1E3A5F; /* Deep blue text */
+        }
+
+        /* Heading */
+        h1 {
+            font-size: 2em;
+            color: #2C3E50; /* Dark blue */
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        /* Birthday Message */
+        p {
+            font-size: 1.2em;
+            line-height: 1.7;
+            margin: 20px 0;
+            color: #3A4F66; /* Medium blue-gray */
+        }
+
+        /* Image Section */
+        .birthday-image {
+            margin: 30px 0;
+        }
+
+        img {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 15px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, filter 0.4s ease-in-out;
+            
+        }
+
+        img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 69px 40px rgba(0, 0, 0, 0.3);
+            filter: grayscale(0%);
+        }
+
+        /* Button Styling */
+        .celebrate-btn {
+            display: inline-block;
+            background: #4682B4; /* Steel blue */
+            color: #ffffff;
+            font-size: 1.2em;
+            font-weight: 600;
+            padding: 15px 35px;
+            border-radius: 10px;
+            text-decoration: none;
+            margin-top: 30px;
+            transition:  0.3s ease, transform 0.2s ease-in-out;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border: 2px solid #ffffff;
+        }
+
+        .celebrate-btn:hover {
+            background: #5A9FCF; /* Lighter blue */
+            color: #ffffff;
+            transform: scale(1.05);
+        }
+
+        
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .content-container {
+                width: 95%;
+                padding: 35px;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            p {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-container">
+        <h1>Happy Birthday, Danilyn! 🎂💙</h1>
+
+        <p>Today, I celebrate 19 incredible years of life!  
+        I'm Danilyn Shaira Ganciar from Bical Waing Science City of Muñoz, and I am deeply grateful for the love, memories, and growth that have shaped me into the person I am today.</p>
+
+        <div class="birthday-image">
+            <img src="birthday.jpg" alt="Birthday Celebration">
+        </div>
+
+        <p>Here's to a new chapter filled with joy, adventure, and success.  
+        May this year bring even more opportunities, laughter, and cherished moments.  
+        Thank you to everyone who has been part of my journey! 💙</p>
+
+        <a href="celebration.html" class="celebrate-btn">Celebrate With Me 🎈</a>
+    </div>
+
+</body>
+</html>
